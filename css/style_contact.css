@@ -1,0 +1,353 @@
+/*=========RESET CSS=========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=========BASE STYLE=========*/
+body{
+	color: #fff;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+}
+.wrapper{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*========= HEADER =========*/
+
+.page-header{
+	height: 220px;
+	width: 100%;
+	background: rgba(0,0,0,1);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.page-header .logo{
+	float: left;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	box-sizing: border-box;
+}
+.page-header .main-nav{
+	float: right;
+}
+
+.main-nav li{
+	padding-top: 50px;
+	float: left;
+	margin-left: 90px;
+}
+.main-nav li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 66px;
+}
+.main-nav li a:hover {
+	color: #ff0000;
+}
+/*========= MAIN =========*/
+/*========= Banner =========*/
+
+.about{
+	margin-top: 240px;
+	margin-bottom: 220px;
+	float: right;
+	padding: 40px;
+}
+
+.expt{
+	background: #816A7A;
+	margin-top: 220px;
+	height: 260px;
+	width: 35%;
+	float: left;
+	padding-bottom: 200px;
+}
+
+
+.banner{
+	float: right;
+	height: 200px;
+	width: 64.8%;
+	background: url(../images/hunger.jpg);
+	background-size: cover;
+	padding: 230px;
+	box-sizing: border-box;
+	margin-top: 220px;
+}
+
+.banner-block{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+}
+h1{
+	text-transform: uppercase;
+
+}
+.subtitle{
+	font-size: 21px;
+	font-weight: 300;
+	margin: 60px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+/*========= Articles =========*/
+
+.articles{
+background: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
+}
+
+
+article{
+	box-sizing: border-box;
+}
+article:first-of-type{
+	color: #000;
+}
+article:last-of-type{
+	color: #000;
+}
+h2{
+	font-size: 36px;
+	font-weight: 300;
+}
+h2::after{
+	content: '.';
+	font-size: 0;
+	display: block;
+	height: 2px;
+	width: 300px;
+	background: #ca0500;
+	margin: 25px 0 28px;
+}
+.quote{
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 300;
+	margin-bottom: 25px;
+}
+.text{
+	font-weight: 300;
+	font color: black;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #f0264c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*========= Footer =========*/
+.page-footer {
+	background: #111111;
+	padding-top: 25px;
+	clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+
+}
+.footer-col {
+	width: 25%;
+	float: left;
+}
+
+.hey{
+	font-family: 'Poiret One', cursive;
+}
+
+.page-footer h3 {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.page-footer h3::after {
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px 0;
+}
+.page-footer li {
+	font-size: 13px;
+	color: #999;
+	line-height: 1.6;
+}
+.page-footer li:hover {
+	color: #fff;
+	cursor: pointer;
+}
+.copy {
+	color: #585858;
+	margin-top: 10px;
+}
+.social a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+.social a:hover {
+	background: #fff;
+	color: #ff0000;
+}
+.social li {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
